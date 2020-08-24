@@ -17,12 +17,19 @@ export class QuoteComponent implements OnInit {
     
   ];
 
+  // addNewQuote(Quote){
+  //   let quoteLength = this.quotes.length;
+  //   Quote.author = quoteLength+1;
+  //   Quote.quote = quoteLength+1;
+  //   Quote.completeDate = new Date(Quote.completeDate)
+  //   this.quotes.push(Quote)
+  // }
+
   addNewQuote(Quote){
     let quoteLength = this.quotes.length;
-    Quote.author = quoteLength+1;
-    Quote.quote = quoteLength+1;
-    Quote.completeDate = new Date(Quote.completeDate)
-    this.quotes.push(Quote)
+    Quote.id = quoteLength+1;
+    Quote.completeDate = new Date(Quote.completeDate);
+    this.quotes.push(Quote);
   }
 
   toggleDetails(index){
