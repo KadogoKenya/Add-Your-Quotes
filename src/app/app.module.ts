@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+// import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,8 +19,11 @@ import { from } from 'rxjs';
     QuoteDetailComponent,
     HighlightBestQuoteDirective,
     DateCountPipe,
-    QuoteFormComponent
+    QuoteFormComponent,
+    // schemas:[ CUSTOM_ELEMENTS_SCHEMA ]
+  
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -27,5 +31,6 @@ import { from } from 'rxjs';
   ],
   providers: [],
   bootstrap: [AppComponent]
+  
 })
 export class AppModule { }
