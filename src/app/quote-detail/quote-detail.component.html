@@ -10,6 +10,6 @@
   {{quote.description}}
   </p>
   <p>This goal will be complete in {{quote.completeDate|dateCount}} days</p>
-  <button (click)= 'quoteDelete(true)' class="btn btn-danger">Delete</button>
+  <button (click)= 'quoteDelete(true)' class="btn btn-danger">Delete</button> &nbsp;
   <a (click)="likeButtonClick()" ><i class="fa fa-thumbs-up fa-lg like"></i>{{upVotes}}</a>  &nbsp;
   <a (click)="dislikeButtonClick()"><i class="fa fa-thumbs-down fa-lg dislike"></i>{{downVotes}}</a>
