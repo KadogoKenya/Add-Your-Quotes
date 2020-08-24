@@ -13,7 +13,7 @@
   <div *ngFor='let quote of quotes;let i = index'>
     <li appStrikethrough> 
         {{quote.author}}
-         due on {{quote.completeDate|date}}
+        {{quote.quote}} due on {{quote.completeDate|date}}
     </li>
    
      <button (click)='toggleDetails(i)'class="btn btn-primary">Toggle Details</button>
