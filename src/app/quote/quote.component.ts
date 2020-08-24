@@ -6,7 +6,7 @@ import { from } from 'rxjs';
   templateUrl: './quote.component.html',
   styleUrls: ['./quote.component.css']
 })
-
+export class QuoteComponent implements OnInit {
 
   
 
