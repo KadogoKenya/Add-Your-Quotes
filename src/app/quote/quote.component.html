@@ -11,7 +11,7 @@
     <div class="col-md-6">
 <ul>
   <div *ngFor='let quote of quotes;let i = index'>
-    <li appHighlightBestQuote> 
+    <li appStrikethrough> 
         {{quote.author}}
         {{quote.quote}} due on {{quote.completeDate|date}}
     </li>

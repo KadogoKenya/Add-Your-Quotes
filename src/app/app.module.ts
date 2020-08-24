@@ -11,6 +11,7 @@ import { HighlightBestQuoteDirective } from './highlight-best-quote.directive';
 import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { from } from 'rxjs';
+import { StrikethroughDirective } from './strikethrough.directive';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { from } from 'rxjs';
     HighlightBestQuoteDirective,
     DateCountPipe,
     QuoteFormComponent,
+    StrikethroughDirective,
     // schemas:[ CUSTOM_ELEMENTS_SCHEMA ]
   
   ],
