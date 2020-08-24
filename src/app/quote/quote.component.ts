@@ -38,12 +38,6 @@ export class QuoteComponent implements OnInit {
       }
       }
     }
-
-  // completeQuote(isComplete, index){
-  //   if (isComplete) {
-  //     this.quotes.splice(index,1);
-  //   }
-  // }
   
 
   constructor() { }
